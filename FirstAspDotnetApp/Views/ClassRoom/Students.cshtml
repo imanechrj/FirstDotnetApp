@@ -1,0 +1,11 @@
+﻿@model FirstAspDotnetApp.ViewModels.Classroom.IndexViewModel;
+@{
+}
+<h2>Students</h2>
+<ul>
+    @foreach (var Students in Model.Student)
+        {
+            <li><span>@Students.Firstname</span> - <span>@Students.Lastname</span> </li>
+        }
+</ul>
+

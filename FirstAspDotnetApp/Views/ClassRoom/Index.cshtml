@@ -1,0 +1,16 @@
+﻿@model FirstAspDotnetApp.ViewModels.Classroom.IndexViewModel;
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Classes </h1>
+
+<ul>
+    @foreach (var ClassRoom in Model.ClassRooms)
+        {
+            <li> <a asp-controller="ClassRoom" asp-action="Students"> @ClassRoom.Name </a> </li>
+        }
+
+</ul>
